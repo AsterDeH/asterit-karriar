@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AsterIT – Karriär &amp; Framtid</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="top-bar">
+  📧 <a href="mailto:aster.demeke@outlook.com">aster.demeke@outlook.com</a>  | 
+  📞 <a href="tel:0739068487">0739068487</a>  | 
+  <a href="#" onclick="showPage('kontakt')">Kontakta oss</a>  | 
+  <a href="#" onclick="showPage('resurser')">Gratis resurser</a>
+</div>
+<!-- NAVBAR -->
+<nav>
+<div class="nav-inner">
+<a class="nav-logo" href="#" onclick="showPage('home')">
+<div class="logo-box">Aster<em>IT</em></div>
+</a>
+<ul class="nav-links">
+<li><a class="active" href="#" id="nav-home" onclick="showPage('home')">Startsida</a></li>
+<li><a href="#" id="nav-jobbsokning" onclick="showPage('jobbsokning')">Jobbsökning</a></li>
+<li><a href="#" id="nav-ai" onclick="showPage('ai')">AI-verktyg</a></li>
+<li><a href="#" id="nav-senior" onclick="showPage('senior')">Senior 55+</a></li>
+<li><a href="#" id="nav-online" onclick="showPage('online')">Tjäna Online</a></li>
+<li><a href="#" id="nav-resurser" onclick="showPage('resurser')">Resurser</a></li>
+<li><a href="#" id="nav-berattelser" onclick="showPage('berattelser')">Berättelser</a></li>
+<li><a href="#" id="nav-kontakt" onclick="showPage('kontakt')">Kontakta oss</a></li>
+</ul>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+<a href="#" onclick="showPage('home');closeMobile()">🏠 Startsida</a>
+<a href="#" onclick="showPage('jobbsokning');closeMobile()">🔍 Jobbsökning</a>
+<a href="#" onclick="showPage('ai');closeMobile()">🤖 AI-verktyg</a>
+<a href="#" onclick="showPage('senior');closeMobile()">⭐ Senior 55+</a>
+<a href="#" onclick="showPage('online');closeMobile()">💻 Tjäna Online</a>
+<a href="#" onclick="showPage('resurser');closeMobile()">📚 Resurser</a>
+<a href="#" onclick="showPage('berattelser');closeMobile()">💬 Berättelser</a>
+<a href="#" onclick="showPage('kontakt');closeMobile()">📩 Kontakta oss</a>
+</div>
+</nav>
+<!-- ============================================================ -->
+<!-- PAGE: HOME -->
+<!-- ============================================================ -->
+<div id="page-home">
+<!-- Hero -->
+<div class="hero-section">
+<div class="hero-bg"></div>
+<div class="hero-particles" id="particles"></div>
+<div class="hero-content">
+<div class="hero-badge">⭐ AsterIT Karriär &amp; Framtid</div>
+<h1>Din väg till ett<br/><span>meningsfullt arbete</span></h1>
+<p>Arbetslivet förändras snabbare än någonsin. Digitalisering, AI och nya arbetsformer skapar både utmaningar och möjligheter. Vi ger dig praktiskt stöd, guider och verktyg för att ta nästa steg – oavsett var du befinner dig i livet.</p>
+<div class="hero-btns">
+<a class="btn btn-primary" href="#" onclick="showPage('jobbsokning')">🚀 Kom igång nu</a>
+<a class="btn btn-outline" href="#" onclick="showPage('resurser')">📚 Gratis resurser</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><span class="stat-num" data-target="500">0</span><span class="stat-label">Guider &amp; Tips</span></div>
+<div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">AI-verktyg</span></div>
+<div class="stat"><span class="stat-num" data-target="95">0</span><span class="stat-label">% Nöjda</span></div>
+<div class="stat"><span class="stat-num" data-target="24">0</span><span class="stat-label">Timmar support</span></div>
+</div>
+</div>
+</div>
+<!-- Welcome section -->
+<div class="section-wrap">
+<div class="container">
+<div class="section-hdr fade-in">
+<div class="section-tag">Välkommen</div>
+<h2>AsterIT Karriär &amp; Framtid</h2>
+<p>Oavsett om ditt mål är att hitta ett jobb, starta eget eller skapa en extra inkomst online finns resurser som kan hjälpa dig på vägen.</p>
+</div>
+<div class="cards-grid">
+<div class="card fade-in" onclick="showPage('jobbsokning')" style="cursor:pointer;">
+<div class="card-icon">🔍</div>
+<h3>Jobbsökning</h3>
+<p>Strategier, CV-guider, intervjuförberedelse och nätverkstips för att hitta rätt jobb.</p>
+<div class="card-link">Läs mer →</div>
+</div>
+<div class="card fade-in" onclick="showPage('ai')" style="cursor:pointer;">
+<div class="card-icon">🤖</div>
+<h3>AI-verktyg</h3>
+<p>Använd AI som din personliga jobbcoach för CV, brev, intervjuträning och karriäranalys.</p>
+<div class="card-link">Läs mer →</div>
+</div>
+<div class="card fade-in" onclick="showPage('senior')" style="cursor:pointer;">
+<div class="card-icon">⭐</div>
+<h3>Senior Karriär 55+</h3>
+<p>Från erfarenhet till nya möjligheter – din kunskap och livskompetens är din styrka.</p>
+<div class="card-link">Läs mer →</div>
+</div>
+<div class="card fade-in" onclick="showPage('online')" style="cursor:pointer;">
+<div class="card-icon">💻</div>
+<h3>Tjäna Online</h3>
+<p>Frilansarbete, digitala produkter, e-handel och sociala medier för att skapa inkomst.</p>
+<div class="card-link">Läs mer →</div>
+</div>
+<div class="card fade-in" onclick="showPage('resurser')" style="cursor:pointer;">
+<div class="card-icon">📚</div>
+<h3>Resurser</h3>
+<p>Gratis CV-mallar, brevmallar, intervjuguider, AI-prompts och LinkedIn-guide att ladda ned.</p>
+<div class="card-link">Ladda ned →</div>
+</div>
+<div class="card fade-in" onclick="showPage('kontakt')" style="cursor:pointer;">
+<div class="card-icon">📩</div>
+<h3>Kontakta oss</h3>
+<p>Personlig hjälp med karriärutveckling, IT-support, hemsidor och affärsutveckling.</p>
+<div class="card-link">Kontakta oss →</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature: Jobbsökning -->
+<div class="section-wrap gray">
+<div class="container">
+<div class="feature-row fade-in">
+<div class="feature-img">
+<img alt="Modern jobbsökning" loading="lazy" src="https://cdn.sanity.io/images/clzmk81p/production/28ac00016db72b2257f4e25dcd1b05fbe58bdff7-1536x1024.png?auto=format&amp;w=1200&amp;h=630&amp;fit=crop"/>
+</div>
+<div class="feature-text">
+<div class="section-tag">Jobbsökning</div>
+<h2>Strategisk jobbsökning ger resultat</h2>
+<p>Att söka jobb handlar inte bara om att skicka många ansökningar. Framgångsrik jobbsökning kräver strategi, planering och kunskap om hur arbetsgivare rekryterar idag.</p>
+<ul class="feature-list">
+<li>Skapa ett CV som passerar ATS-system</li>
+<li>Skriv personliga brev som öppnar dörrar</li>
+<li>Förbered dig för intervjuer med självförtroende</li>
+<li>Bygg ett nätverk som ger resultat</li>
+</ul>
+<a class="btn btn-primary" href="#" onclick="showPage('jobbsokning')" style="display:inline-flex;margin-top:.5rem;">🔍 Utforska jobbsökning</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Image cards row -->
+<div class="section-wrap">
+<div class="container">
+<div class="section-hdr fade-in">
+<div class="section-tag">Kom igång</div>
+<h2>Välj ditt nästa steg</h2>
+</div>
+<div class="fade-in" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.3rem;">
+<div class="img-hero" onclick="showPage('jobbsokning')" style="cursor:pointer;">
+<img alt="CV skrivning" loading="lazy" src="https://storage.googleapis.com/mindsmith/uploads/51f7ab1d-4715-4cfa-915b-0abbade6abc8/generated-image.jpg"/>
+<div class="img-hero-overlay"><h3>📄 Professionellt CV</h3><p>Skapa ett CV som sticker ut och passerar ATS-system</p></div>
+</div>
+<div class="img-hero" onclick="showPage('jobbsokning')" style="cursor:pointer;">
+<img alt="Jobbintervju" loading="lazy" src="https://static1.bigstockphoto.com/4/5/2/large1500/254790886.jpg"/>
+<div class="img-hero-overlay"><h3>🎤 Intervjuförberedelse</h3><p>Svara med självförtroende på alla frågor</p></div>
+</div>
+<div class="img-hero" onclick="showPage('senior')" style="cursor:pointer;">
+<img alt="Senior karriär" loading="lazy" src="https://as1.ftcdn.net/jpg/06/10/38/20/1000_F_610382086_bqoqASVU4AGuHCTwq2QO72E1hUSJxZps.jpg"/>
+<div class="img-hero-overlay"><h3>⭐ Senior 55+</h3><p>Din erfarenhet är din styrka på arbetsmarknaden</p></div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI section dark -->
+<div class="section-wrap dark">
+<div class="container">
+<div class="section-hdr light fade-in">
+<div class="section-tag">AI-verktyg</div>
+<h2>AI som din personliga jobbcoach</h2>
+<p>Med rätt AI-verktyg kan du spara tid och förbättra kvaliteten på dina ansökningar dramatiskt.</p>
+</div>
+<div class="cards-grid fade-in">
+<div class="card card-dark"><div class="card-icon">📄</div><h3>CV-förbättring</h3><p>AI kontrollerar språk, föreslår förbättringar och anpassar ditt CV för varje tjänst.</p></div>
+<div class="card card-dark"><div class="card-icon">✉️</div><h3>Personliga brev</h3><p>Beskriv tjänsten och din erfarenhet – AI hjälper dig formulera ett professionellt brev.</p></div>
+<div class="card card-dark"><div class="card-icon">🎤</div><h3>Intervjuträning</h3><p>AI simulerar intervjufrågor och ger konstruktiv feedback på dina svar.</p></div>
+<div class="card card-dark"><div class="card-icon">🗺️</div><h3>Karriäranalys</h3><p>Kartlägg kompetenser, identifiera lämpliga yrken och få förslag på utbildningar.</p></div>
+</div>
+<div class="fade-in" style="text-align:center;margin-top:2rem;">
+<a class="btn btn-outline" href="#" onclick="showPage('ai')">🤖 Utforska AI-verktyg</a>
+</div>
+</div>
+</div>
+<!-- Feature: Senior -->
+<div class="section-wrap gray">
+<div class="container">
+<div class="feature-row reverse fade-in">
+<div class="feature-img">
+<img alt="Senior mentor" loading="lazy" src="https://imageio.forbes.com/specials-images/imageserve/6205319ea8583671429ea195/Senior-businesswoman-mentoring-a-younger-male-colleague/0x0.jpg?width=960"/>
+</div>
+<div class="feature-text">
+<div class="section-tag">Senior 55+</div>
+<h2>Erfarenhet är en konkurrensfördel</h2>
+<p>Att vara över 55 år innebär inte att karriären är över. För många börjar ett nytt kapitel där erfarenhet, kunskap och livskompetens blir värdefulla tillgångar.</p>
+<ul class="feature-list">
+<li>Bli mentor och dela din kunskap</li>
+<li>Starta podcast, YouTube-kanal eller blogg</li>
+<li>Skapa digitala produkter och kurser</li>
+<li>Bygg ditt personliga varumärke online</li>
+</ul>
+<a class="btn btn-primary" href="#" onclick="showPage('senior')" style="display:inline-flex;margin-top:.5rem;">⭐ Utforska Senior 55+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="cta-section">
+<div class="cta-bg"></div>
+<div class="container">
+<div class="fade-in">
+<h2>Din framtid börjar idag</h2>
+<p>Oavsett om du söker arbete, vill utveckla din kompetens eller skapa din egen verksamhet finns möjligheter att ta nästa steg.</p>
+<div class="cta-btns">
+<a class="btn btn-primary" href="#" onclick="showPage('jobbsokning')">🚀 Börja din jobbsökning</a>
+<a class="btn btn-outline" href="#" onclick="showPage('resurser')">📚 Hämta gratis resurser</a>
+<a class="btn btn-outline" href="#" onclick="showPage('kontakt')">📩 Kontakta oss</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: JOBBSÖKNING -->
+<!-- ============================================================ -->
+<div id="page-jobbsokning" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Jobbsökning</span></div>
+<h1>Jobbsökning</h1>
+<p>Strategier, guider och verktyg för att hitta rätt jobb i dagens arbetsmarknad</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><circle cx="70" cy="50" fill="rgba(255,255,255,.05)" r="30" stroke="rgba(255,255,255,.3)" stroke-width="3"></circle><line stroke="rgba(126,200,240,.6)" stroke-linecap="round" stroke-width="5" x1="92" x2="115" y1="72" y2="95"></line><circle cx="70" cy="50" fill="rgba(126,200,240,.1)" r="20" stroke="rgba(126,200,240,.5)" stroke-width="2"></circle><text fill="rgba(255,255,255,.8)" font-size="16" text-anchor="middle" x="70" y="55">🔍</text></svg></div>
+</div>
+</div>
+<div class="page-layout">
+<aside class="sidebar">
+<div class="sidebar-box"><div class="sidebar-box-title">📋 Innehåll</div><ul class="sidebar-nav"><li><a class="active" href="#jobb-intro">Introduktion</a></li><li><a href="#jobb-cv">CV &amp; Ansökan</a></li><li><a href="#jobb-brev">Personligt brev</a></li><li><a href="#jobb-intervju">Intervjuförberedelse</a></li><li><a href="#jobb-natverk">Nätverk</a></li><li><a href="#jobb-checklista">Checklista</a></li><li><a href="#jobb-plan">30-dagarsplan</a></li></ul></div>
+<div class="sidebar-box"><div class="sidebar-box-title">🔗 Relaterat</div><ul class="sidebar-nav"><li><a href="#" onclick="showPage('ai')">AI-verktyg</a></li><li><a href="#" onclick="showPage('resurser')">CV-mallar</a></li><li><a href="#" onclick="showPage('senior')">Senior 55+</a></li></ul></div>
+<div class="sidebar-cta"><p>Behöver du hjälp med ditt CV?</p><a href="#" onclick="showPage('kontakt')">📩 Kontakta oss</a></div>
+</aside>
+<main class="main-content">
+<section id="jobb-intro">
+<h2>Så hittar du jobb i dagens arbetsmarknad</h2>
+<div class="img-card"><img alt="Jobbsökning" loading="lazy" src="https://cdn.sanity.io/images/clzmk81p/production/28ac00016db72b2257f4e25dcd1b05fbe58bdff7-1536x1024.png?auto=format&amp;w=1200&amp;h=630&amp;fit=crop"/><div class="img-card-caption">🎯 Strategisk jobbsökning ger bättre resultat än att skicka många generiska ansökningar</div></div>
+<p>Att söka jobb handlar inte bara om att skicka många ansökningar. Framgångsrik jobbsökning kräver strategi, planering och kunskap om hur arbetsgivare rekryterar. Många tjänster tillsätts idag genom nätverk, rekommendationer och digitala plattformar.</p>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Upp till 70–80% av alla jobb tillsätts via nätverk och rekommendationer – utan att annonseras offentligt. Att ha rätt strategi är avgörande.</p></div>
+</section>
+<div class="divider"></div>
+<section id="jobb-cv">
+<h2>Skapa ett professionellt CV</h2>
+<p>Ett välskrivet CV hjälper arbetsgivaren att snabbt förstå din kompetens. Anpassa alltid ditt CV till varje specifik tjänst du söker.</p>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><div><h4>Välj rätt format</h4><p>Kronologiskt CV passar de flesta. Funktionellt CV passar vid karriärbyte eller lång frånvaro.</p></div></div>
+<div class="step"><div class="step-num">2</div><div><h4>Skriv en stark sammanfattning</h4><p>3–4 meningar som beskriver vem du är, vad du kan och vad du söker. Anpassa till varje tjänst.</p></div></div>
+<div class="step"><div class="step-num">3</div><div><h4>Lyft fram prestationer, inte bara uppgifter</h4><p>Skriv "Ökade kundnöjdheten med 30%" istället för "Ansvarade för kundservice".</p></div></div>
+<div class="step"><div class="step-num">4</div><div><h4>Anpassa till varje tjänst</h4><p>Läs jobbannonsen noggrant och spegla nyckelord och krav i ditt CV.</p></div></div>
+<div class="step"><div class="step-num">5</div><div><h4>Korrekturläs noga</h4><p>Stavfel och grammatikfel ger ett dåligt intryck. Använd gärna AI för att kontrollera.</p></div></div>
+</div>
+<div class="tip-box" style="margin-top:1rem;"><div class="tip-icon">📥</div><p>Ladda ned vår <strong>gratis CV-mall</strong> med AsterIT-design. <a href="#" onclick="showPage('resurser')" style="color:#78350f;font-weight:700;">Gå till Resurser →</a></p></div>
+</section>
+<div class="divider"></div>
+<section id="jobb-brev">
+<h2>Personligt brev</h2>
+<p>Det personliga brevet ska komplettera ditt CV och visa din personlighet, motivation och varför just du passar för rollen.</p>
+<div class="two-col">
+<div><h3>Brevet ska berätta:</h3><ul class="content-list"><li>Varför du söker just denna tjänst</li><li>Varför du passar för rollen</li><li>Hur företaget kan dra nytta av dina erfarenheter</li><li>Vad som motiverar dig</li></ul></div>
+<div><h3>Struktur:</h3><div class="steps" style="gap:.7rem;"><div class="step" style="padding:.8rem 1rem;"><div class="step-num" style="width:28px;height:28px;font-size:.78rem;">1</div><div><h4 style="font-size:.88rem;">Inledning</h4><p style="font-size:.83rem;">Fånga uppmärksamheten med något konkret</p></div></div><div class="step" style="padding:.8rem 1rem;"><div class="step-num" style="width:28px;height:28px;font-size:.78rem;">2</div><div><h4 style="font-size:.88rem;">Varför du söker</h4><p style="font-size:.83rem;">Visa att du förstår företagets verksamhet</p></div></div><div class="step" style="padding:.8rem 1rem;"><div class="step-num" style="width:28px;height:28px;font-size:.78rem;">3</div><div><h4 style="font-size:.88rem;">Dina styrkor</h4><p style="font-size:.83rem;">Koppla kompetenser till tjänstens krav</p></div></div><div class="step" style="padding:.8rem 1rem;"><div class="step-num" style="width:28px;height:28px;font-size:.78rem;">4</div><div><h4 style="font-size:.88rem;">Avslutning</h4><p style="font-size:.83rem;">Bjud in till intervju och tacka</p></div></div></div></div>
+</div>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Håll brevet till max en A4-sida. Undvik klichéer som "Jag är en lagspelare med driv". Var specifik och personlig.</p></div>
+</section>
+<div class="divider"></div>
+<section id="jobb-intervju">
+<h2>Förbered dig inför intervjun</h2>
+<p>Vanliga frågor och hur du svarar på dem med självförtroende.</p>
+<div class="accordion">
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">👤 Berätta om dig själv</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><p style="color:var(--gray);margin-bottom:.7rem;">Använd STAR-metoden. Håll svaret till 2–3 minuter och fokusera på det som är relevant för tjänsten.</p><div class="info-box"><div class="tip-icon">📝</div><p>"Jag har arbetat inom [bransch] i X år med fokus på [kompetens]. Jag är stolt över att ha [prestation]. Nu söker jag en roll där jag kan [mål]."</p></div></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">🏢 Varför vill du arbeta hos oss?</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><p style="color:var(--gray);">Visa att du gjort din research. Besök företagets hemsida, LinkedIn och läs senaste nyheter. Nämn konkreta projekt eller värderingar som resonerar med dig.</p></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">💪 Vilka är dina styrkor?</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><p style="color:var(--gray);margin-bottom:.7rem;">Välj 2–3 styrkor som är relevanta för tjänsten och backa upp med konkreta exempel.</p><ul class="checklist"><li onclick="toggleCheck(this)"><div class="check-box"></div>Koppla styrkan direkt till tjänstens krav</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Ge ett konkret exempel från arbetslivet</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Visa mätbara resultat av din styrka</li></ul></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">🧗 Vilka utmaningar har du mött?</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><p style="color:var(--gray);">Välj en verklig utmaning och fokusera på hur du löste den. Struktur: Situation → Uppgift → Åtgärd → Resultat (STAR).</p></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">💰 Vad har du för löneanspråk?</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><p style="color:var(--gray);">Gör din research på marknadslöner (Lönekollen, Glassdoor). Ge ett intervall och sätt ditt önskemål i övre delen. Var beredd att motivera det.</p></div></div></div>
+</div>
+<h3>Checklista inför intervjun</h3>
+<ul class="checklist"><li onclick="toggleCheck(this)"><div class="check-box"></div>Research om företaget (hemsida, nyheter, LinkedIn)</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Läs igenom jobbannonsen igen noggrant</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Förbered 5–7 konkreta exempel (STAR-metoden)</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Förbered egna frågor till arbetsgivaren</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Planera resan och kom 10 min tidigt</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Klä dig professionellt och passande</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Stäng av mobiltelefonen</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Skicka tackmejl inom 24 timmar efter intervjun</li></ul>
+</section>
+<div class="divider"></div>
+<section id="jobb-natverk">
+<h2>Bygg ditt nätverk</h2>
+<p>Nätverk spelar en stor roll när det gäller att hitta arbete. Upp till 70–80% av alla jobb tillsätts via nätverk och rekommendationer.</p>
+<div class="mini-cards"><div class="mini-card"><div class="mc-icon">💼</div><h4>LinkedIn</h4><p>Professionellt nätverk och jobbsökning</p></div><div class="mini-card"><div class="mc-icon">🏛️</div><h4>Branschföreningar</h4><p>Event, seminarier och forum</p></div><div class="mini-card"><div class="mc-icon">👥</div><h4>Tidigare kollegor</h4><p>Rekommendationer och tips</p></div><div class="mini-card"><div class="mc-icon">🎪</div><h4>Arbetsmarknadsmässor</h4><p>Träffa arbetsgivare direkt</p></div><div class="mini-card"><div class="mc-icon">🌐</div><h4>Online-communities</h4><p>Facebook-grupper och forum</p></div><div class="mini-card"><div class="mc-icon">☕</div><h4>Informella möten</h4><p>Kaffe och lunch med kontakter</p></div></div>
+</section>
+<div class="divider"></div>
+<section id="jobb-checklista">
+<h2>Komplett checklista för arbetssökande</h2>
+<p>Klicka på varje punkt för att markera den som klar.</p>
+<div class="two-col">
+<div><h3>📋 Förberedelse</h3><ul class="checklist"><li onclick="toggleCheck(this)"><div class="check-box"></div>Uppdatera ditt CV (max 2 sidor)</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Skapa eller uppdatera LinkedIn-profil</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Skriv en generell mall för personligt brev</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Samla in referenser (minst 2–3 personer)</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Definiera ditt mål och önskad roll</li></ul></div>
+<div><h3>🔍 Jobbsökning</h3><ul class="checklist"><li onclick="toggleCheck(this)"><div class="check-box"></div>Registrera dig på Arbetsförmedlingen</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Skapa konton på LinkedIn, Indeed, Monster</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Sätt upp jobbnotiser för relevanta sökord</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Skicka minst 3–5 ansökningar per vecka</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Följ upp ansökningar efter 1–2 veckor</li></ul></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="jobb-plan">
+<h2>Din 30-dagars handlingsplan</h2>
+<div class="steps">
+<div class="step" style="border-left-color:#ef4444;"><div class="step-num" style="background:linear-gradient(135deg,#ef4444,#f97316);">V1</div><div><h4>Vecka 1 – Förberedelse</h4><p>Uppdatera CV och LinkedIn. Definiera ditt mål. Identifiera 20 målföretag. Kontakta 5 gamla kollegor.</p></div></div>
+<div class="step" style="border-left-color:#f59e0b;"><div class="step-num" style="background:linear-gradient(135deg,#f59e0b,#eab308);">V2</div><div><h4>Vecka 2 – Aktivt sökande</h4><p>Skicka 5–10 anpassade ansökningar. Registrera dig på alla jobbportaler. Sätt upp automatiska notiser.</p></div></div>
+<div class="step" style="border-left-color:#10b981;"><div class="step-num" style="background:linear-gradient(135deg,#10b981,#06b6d4);">V3</div><div><h4>Vecka 3 – Nätverk &amp; Uppföljning</h4><p>Delta i ett branschevent. Följ upp alla ansökningar. Boka informella möten. Publicera på LinkedIn.</p></div></div>
+<div class="step" style="border-left-color:#8b5cf6;"><div class="step-num" style="background:linear-gradient(135deg,#8b5cf6,#6366f1);">V4</div><div><h4>Vecka 4 – Utvärdera &amp; Justera</h4><p>Analysera vad som fungerat. Justera strategi. Fortsätt söka. Förbered för kommande intervjuer.</p></div></div>
+</div>
+<div class="tip-box" style="margin-top:1rem;"><div class="tip-icon">📥</div><p>Ladda ned vår <strong>gratis 30-dagars jobbsökarplan</strong> som Word-dokument. <a href="#" onclick="showPage('resurser')" style="color:#78350f;font-weight:700;">Gå till Resurser →</a></p></div>
+</section>
+</main>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: AI -->
+<!-- ============================================================ -->
+<div id="page-ai" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">AI-verktyg</span></div>
+<h1>AI-<span>verktyg</span></h1>
+<p>Använd AI som din personliga jobbcoach – spara tid och förbättra dina ansökningar</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><rect fill="rgba(255,255,255,.08)" height="60" rx="8" stroke="rgba(126,200,240,.4)" stroke-width="2" width="80" x="40" y="25"></rect><circle cx="80" cy="55" fill="rgba(126,200,240,.2)" r="18" stroke="rgba(126,200,240,.5)" stroke-width="1.5"></circle><text fill="rgba(255,255,255,.9)" font-size="16" text-anchor="middle" x="80" y="60">🤖</text></svg></div>
+</div>
+</div>
+<div class="page-layout">
+<aside class="sidebar">
+<div class="sidebar-box"><div class="sidebar-box-title">📋 Innehåll</div><ul class="sidebar-nav"><li><a class="active" href="#ai-intro">Vad är AI?</a></li><li><a href="#ai-cv">CV-förbättring</a></li><li><a href="#ai-brev">Personliga brev</a></li><li><a href="#ai-intervju">Intervjuträning</a></li><li><a href="#ai-karriar">Karriäranalys</a></li><li><a href="#ai-verktyg">Rekommenderade verktyg</a></li></ul></div>
+<div class="sidebar-cta"><p>Vill du lära dig använda AI?</p><a href="#" onclick="showPage('kontakt')">📩 Kontakta oss</a></div>
+</aside>
+<main class="main-content">
+<section id="ai-intro">
+<h2>Använd AI som din personliga jobbcoach</h2>
+<div class="img-card"><img alt="AI assistent" loading="lazy" src="https://magoo.tech/wp-content/uploads/2026/01/Robot-assistant-in-a-modern-office.png"/><div class="img-card-caption">🤖 AI-verktyg kan hjälpa dig med hela jobbsökningsprocessen</div></div>
+<p>Artificiell intelligens förändrar hur människor söker arbete. Med rätt verktyg kan du spara tid och dramatiskt förbättra kvaliteten på dina ansökningar.</p>
+<div class="highlight-box"><h4>Vad är AI?</h4><p>AI är teknik som kan analysera information, skapa texter och hjälpa människor att lösa problem snabbare. Moderna AI-verktyg förstår naturligt språk och ger personliga, kontextanpassade svar baserade på din specifika situation.</p></div>
+<div class="tip-box"><div class="tip-icon">⚠️</div><p><strong>Viktigt:</strong> AI ska ses som ett hjälpmedel, inte en ersättning för din personlighet. Granska alltid resultatet och anpassa med dina egna erfarenheter. Arbetsgivare märker generiska AI-texter.</p></div>
+</section>
+<div class="divider"></div>
+<section id="ai-cv"><h2>CV-förbättring med AI</h2><p>AI kan kontrollera språk, föreslå förbättringar och anpassa ditt CV för specifika tjänster och branscher.</p><div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(43,95,142,.1);">📄</div><h3>Exempelprompt – CV-förbättring</h3></div><div class="prompt-box">"Förbättra mitt CV för en tjänst som [roll] på [företag]. Fokusera på att lyfta fram [kompetens] och anpassa språket till jobbannonsen: [klistra in annons]"</div></div></section>
+<div class="divider"></div>
+<section id="ai-brev"><h2>Personliga brev med AI</h2><p>Beskriv tjänsten och din erfarenhet så kan AI hjälpa dig att formulera ett professionellt och personligt brev.</p><div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(16,185,129,.1);">✉️</div><h3>Exempelprompt – Personligt brev</h3></div><div class="prompt-box">"Skriv ett personligt brev för tjänsten [roll]. Mina erfarenheter: [lista]. Företaget arbetar med [verksamhet]. Tonen ska vara professionell men personlig."</div></div></section>
+<div class="divider"></div>
+<section id="ai-intervju"><h2>Intervjuträning med AI</h2><p>AI kan simulera realistiska intervjufrågor och ge konstruktiv feedback på dina svar.</p><div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(245,158,11,.1);">🎤</div><h3>Exempelprompt – Intervjuträning</h3></div><div class="prompt-box">"Agera som en intervjuare för en [roll]-tjänst. Ställ 5 vanliga intervjufrågor en i taget och ge feedback på mina svar. Börja med den första frågan."</div></div></section>
+<div class="divider"></div>
+<section id="ai-karriar"><h2>Karriäranalys med AI</h2><p>AI kan hjälpa dig att kartlägga kompetenser, identifiera lämpliga yrken och föreslå relevanta utbildningar.</p><div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(139,92,246,.1);">🗺️</div><h3>Exempelprompt – Karriäranalys</h3></div><div class="prompt-box">"Baserat på mina erfarenheter inom [område], vilka yrken passar mig? Vilka kompetenser behöver jag utveckla och vilka kurser rekommenderar du?"</div></div></section>
+<div class="divider"></div>
+<section id="ai-verktyg"><h2>Rekommenderade AI-verktyg</h2><div class="mini-cards"><div class="mini-card"><div class="mc-icon">🤖</div><h4>Microsoft Copilot</h4><p>Integrerat i Microsoft 365</p></div><div class="mini-card"><div class="mc-icon">💬</div><h4>ChatGPT</h4><p>OpenAI:s kraftfulla AI</p></div><div class="mini-card"><div class="mc-icon">🌟</div><h4>Claude AI</h4><p>Anthropics AI-assistent</p></div><div class="mini-card"><div class="mc-icon">🎨</div><h4>Canva AI</h4><p>Design och CV-mallar</p></div><div class="mini-card"><div class="mc-icon">💼</div><h4>LinkedIn AI</h4><p>Jobbsökning och profil</p></div><div class="mini-card"><div class="mc-icon">🔍</div><h4>Perplexity AI</h4><p>AI-driven sökning</p></div><div class="mini-card"><div class="mc-icon">📝</div><h4>Grammarly</h4><p>Språk och grammatik</p></div><div class="mini-card"><div class="mc-icon">🎬</div><h4>CapCut AI</h4><p>Video och innehåll</p></div></div>
+<div class="tip-box" style="margin-top:1rem;"><div class="tip-icon">📥</div><p>Ladda ned vårt <strong>gratis AI-promptbibliotek</strong> med 10 färdiga prompts. <a href="#" onclick="showPage('resurser')" style="color:#78350f;font-weight:700;">Gå till Resurser →</a></p></div>
+</section>
+</main>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: SENIOR 55+ -->
+<!-- ============================================================ -->
+<div id="page-senior" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Senior Karriär 55+</span></div>
+<h1>Senior Karriär <span>55+</span></h1>
+<p>Från erfarenhet till nya möjligheter – din kunskap är din styrka</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><circle cx="118" cy="28" fill="rgba(245,158,11,.25)" r="14" stroke="rgba(245,158,11,.5)" stroke-width="1.5"></circle><text fill="#f59e0b" font-size="14" text-anchor="middle" x="118" y="33">★</text><rect fill="rgba(255,255,255,.08)" height="52" rx="5" stroke="rgba(255,255,255,.25)" stroke-width="2" width="75" x="30" y="20"></rect><rect fill="rgba(126,200,240,.2)" height="38" rx="3" width="65" x="35" y="25"></rect><rect fill="rgba(255,255,255,.6)" height="3" rx="1.5" width="38" x="40" y="31"></rect><rect fill="rgba(255,255,255,.3)" height="2" rx="1" width="50" x="40" y="37"></rect><rect fill="rgba(255,255,255,.3)" height="2" rx="1" width="44" x="40" y="42"></rect><text fill="rgba(255,255,255,.7)" font-size="11" font-weight="bold" text-anchor="middle" x="80" y="100">55+</text></svg></div>
+</div>
+</div>
+<div class="page-layout">
+<aside class="sidebar">
+<div class="sidebar-box"><div class="sidebar-box-title">📋 Innehåll</div><ul class="sidebar-nav"><li><a class="active" href="#s-intro">Introduktion</a></li><li><a href="#s-erfarenhet">Din erfarenhet</a></li><li><a href="#s-specialist">Hitta din nisch</a></li><li><a href="#s-mentor">Bli mentor</a></li><li><a href="#s-forelasning">Föreläsningar</a></li><li><a href="#s-podcast">Starta podcast</a></li><li><a href="#s-youtube">YouTube-kanal</a></li><li><a href="#s-blogg">Blogg &amp; artiklar</a></li><li><a href="#s-digitala">Digitala guider</a></li><li><a href="#s-kurs">Studiecirkel &amp; kurs</a></li><li><a href="#s-ideell">Ideella org.</a></li><li><a href="#s-varumarke">Personligt varumärke</a></li><li><a href="#s-yrkesomraden">Yrkesområden</a></li><li><a href="#s-inspiration">Inspiration</a></li></ul></div>
+<div class="sidebar-box"><div class="sidebar-box-title">🔗 Relaterat</div><ul class="sidebar-nav"><li><a href="#" onclick="showPage('jobbsokning')">Jobbsökning</a></li><li><a href="#" onclick="showPage('ai')">AI-verktyg</a></li><li><a href="#" onclick="showPage('online')">Tjäna Online</a></li><li><a href="#" onclick="showPage('resurser')">CV-mallar</a></li></ul></div>
+<div class="sidebar-cta"><p>Behöver du personlig vägledning?</p><a href="#" onclick="showPage('kontakt')">📩 Kontakta oss</a></div>
+</aside>
+<main class="main-content">
+<section id="s-intro">
+<div class="intro-card">
+<div class="intro-card-img"><img alt="Senior mentor" loading="lazy" src="https://imageio.forbes.com/specials-images/imageserve/6205319ea8583671429ea195/Senior-businesswoman-mentoring-a-younger-male-colleague/0x0.jpg?width=960"/></div>
+<div class="intro-card-text">
+<h2>Från erfarenhet till nya möjligheter</h2>
+<p>Att vara över 55 år innebär inte att karriären är över. För många börjar ett nytt kapitel där erfarenhet, kunskap och livskompetens blir värdefulla tillgångar.</p>
+<p>Det som du har lärt dig under ett långt arbetsliv kan användas på nya sätt, både för att skapa inkomst och för att hjälpa andra.</p>
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem;"><span class="badge badge-blue">⭐ Erfarenhet</span><span class="badge badge-green">🤝 Mentorskap</span><span class="badge badge-gold">💡 Nya möjligheter</span></div>
+</div>
+</div>
+<p>Många seniorer fokuserar enbart på att söka traditionella anställningar. Men idag finns betydligt fler möjligheter. Du kan dela med dig av dina kunskaper, starta egna projekt, bli mentor, skapa utbildningar eller bygga en publik online kring det du kan bäst.</p>
+<div class="tip-box"><div class="tip-icon">💡</div><p><strong>Visste du?</strong> Upp till 70% av alla jobb tillsätts via nätverk och rekommendationer. Din långa erfarenhet och dina kontakter är en enorm fördel som unga kandidater inte kan matcha.</p></div>
+</section>
+<div class="divider"></div>
+<section id="s-erfarenhet">
+<h2>Din erfarenhet är värdefull</h2>
+<div class="two-col-img">
+<img alt="Erfaren mentor" loading="lazy" src="https://as1.ftcdn.net/jpg/06/72/64/48/1000_F_672644883_wnxqLlfyVgSscAu3Va23E9yRF5RnNZB4.jpg"/>
+<div>
+<p>Efter många år i arbetslivet har du samlat på dig kunskap som inte går att läsa sig till i en bok. Denna erfarenhet kan omvandlas till nya möjligheter även om du inte får ett traditionellt heltidsjobb.</p>
+<p>Du har:</p>
+<div class="strength-grid">
+<div class="strength-item"><div class="si-icon">🔨</div><div><h4>Praktisk erfarenhet</h4><p>Verklig kunskap från år av arbete</p></div></div>
+<div class="strength-item"><div class="si-icon">🏭</div><div><h4>Branschkunskap</h4><p>Djup förståelse för din bransch</p></div></div>
+<div class="strength-item"><div class="si-icon">🧩</div><div><h4>Problemlösning</h4><p>Löser komplexa problem effektivt</p></div></div>
+<div class="strength-item"><div class="si-icon">👥</div><div><h4>Människokännedom</h4><p>Förstår hur människor fungerar</p></div></div>
+<div class="strength-item"><div class="si-icon">🔄</div><div><h4>Erfarenhet av förändringar</h4><p>Navigerat kriser och förändringar</p></div></div>
+<div class="strength-item"><div class="si-icon">🌐</div><div><h4>Kontakter &amp; nätverk</h4><p>Värdefulla relationer från yrkeslivet</p></div></div>
+</div>
+</div>
+</div>
+<div class="highlight-box"><h4>Kom ihåg</h4><p>Denna erfarenhet kan omvandlas till nya möjligheter även om du inte får ett traditionellt heltidsjobb. Din kunskap har ett värde som marknaden efterfrågar.</p></div>
+</section>
+<div class="divider"></div>
+<section id="s-specialist">
+<h2>Hitta ditt specialistområde</h2>
+<p>Börja med att fundera över frågor som hjälper dig att identifiera din unika styrka och ditt specialistområde.</p>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(43,95,142,.1);">🎯</div><h3>Frågor att reflektera över</h3></div>
+<ul class="checklist"><li onclick="toggleCheck(this)"><div class="check-box"></div>Vad har jag arbetat med längst?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vilka problem är jag bra på att lösa?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vad brukar kollegor fråga mig om?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vilka erfarenheter har jag som andra saknar?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vad tycker jag om att prata om?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vad har jag uppnått som jag är stolt över?</li><li onclick="toggleCheck(this)"><div class="check-box"></div>Vilka utmaningar har jag övervunnit?</li></ul>
+</div>
+<div class="success-box"><div class="tip-icon">✅</div><p>Många upptäcker att deras största tillgång inte är deras senaste jobb utan hela den samlade erfarenheten från ett långt arbetsliv.</p></div>
+</section>
+<div class="divider"></div>
+<section id="s-mentor">
+<h2>Dela med dig av din kunskap – Bli mentor</h2>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(16,185,129,.1);">🤝</div><h3>Bli mentor</h3></div>
+<div class="two-col">
+<div><p>Många yngre personer saknar vägledning och erfarenhet. Som mentor kan du göra en enorm skillnad.</p><p>Du kan hjälpa:</p><ul class="content-list"><li>Studenter som söker sin väg</li><li>Nya företagare som behöver råd</li><li>Nyanlända som vill förstå arbetsmarknaden</li><li>Yngre yrkesverksamma som vill växa</li><li>Personer som byter karriär</li></ul></div>
+<div><img alt="Mentor och adept" loading="lazy" src="https://as2.ftcdn.net/jpg/07/71/28/71/1000_F_771287140_yIZ1ejgkR7LhSriSZTBUVISZhCapiDn6.jpg" style="border-radius:var(--radius);width:100%;height:180px;object-fit:cover;box-shadow:var(--shadow-lg);"/></div>
+</div>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Mentorskap kan ske både online och fysiskt och kan vara ideellt eller mot betalning. Plattformar som LinkedIn och lokala föreningar kopplar samman mentorer med adepter.</p></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-forelasning">
+<h2>Föreläsningar och workshops</h2>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(245,158,11,.1);">🎤</div><h3>Föreläsningar och workshops</h3></div>
+<p>Om du har arbetat länge inom ett område kan du hålla föreläsningar för organisationer som söker din typ av kunskap.</p>
+<div class="two-col">
+<div><h4>Du kan föreläsa för:</h4><ul class="content-list"><li>Föreningar och organisationer</li><li>Företag och arbetsplatser</li><li>Studieförbund (ABF, Folkuniversitetet)</li><li>Seniororganisationer</li><li>Kommuner och myndigheter</li></ul></div>
+<div><h4>Populära ämnen:</h4><div class="topic-tags"><span class="topic-tag">Ledarskap</span><span class="topic-tag">Kundservice</span><span class="topic-tag">Arbetslivserfarenheter</span><span class="topic-tag">Ekonomi i vardagen</span><span class="topic-tag">Föräldraskap</span><span class="topic-tag">Integration</span><span class="topic-tag">Hållbarhet</span><span class="topic-tag">Hälsa &amp; välbefinnande</span></div></div>
+</div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-podcast">
+<h2>Starta en podcast</h2>
+<p>Dela berättelser och erfarenheter med en bred publik. Podcasting är ett enkelt och kraftfullt sätt att dela kunskap och bygga ett nätverk.</p>
+<div class="two-col-img">
+<img alt="Podcast studio" loading="lazy" src="https://as2.ftcdn.net/v2/jpg/03/90/56/77/1000_F_390567722_fh2UHakO2zi4UbqYTRAKMUxJpXTl1iiX.jpg"/>
+<div>
+<h3 style="margin-top:0;">Du behöver i princip:</h3>
+<ul class="content-list"><li>En dator eller mobiltelefon</li><li>En enkel mikrofon (från 300 kr)</li><li>Gratis programvara (Audacity, GarageBand)</li><li>Något intressant att prata om</li></ul>
+<div class="highlight-box"><h4>Kom igång snabbt</h4><p>Plattformar som Spotify for Podcasters och Anchor gör det enkelt att publicera din podcast gratis.</p></div>
+</div>
+</div>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(139,92,246,.1);">🎙️</div><h3>Exempel på poddämnen</h3></div>
+<div class="accordion">
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">💼 Arbetsliv &amp; karriär</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><div class="topic-tags"><span class="topic-tag">Arbetsliv och karriär</span><span class="topic-tag">Lärdomar från arbetslivet</span><span class="topic-tag">Karriär efter 55</span><span class="topic-tag">Entreprenörskap</span><span class="topic-tag">Ledarskap</span></div></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">🌍 Liv &amp; erfarenheter</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><div class="topic-tags"><span class="topic-tag">Livserfarenhet</span><span class="topic-tag">Att flytta till ett nytt land</span><span class="topic-tag">Livsresor</span><span class="topic-tag">Kulturmöten</span><span class="topic-tag">Familjeliv</span></div></div></div></div>
+<div class="acc-item"><button class="acc-header" onclick="toggleAcc(this)"><div class="acc-title">🌱 Intressen &amp; livsstil</div><div class="acc-arrow">▼</div></button><div class="acc-body"><div class="acc-content"><div class="topic-tags"><span class="topic-tag">Historia</span><span class="topic-tag">Trädgård</span><span class="topic-tag">Hälsa</span><span class="topic-tag">Matlagning</span><span class="topic-tag">Hantverk</span><span class="topic-tag">Samhällsfrågor</span></div></div></div></div>
+</div>
+<div class="success-box" style="margin-top:1rem;"><div class="tip-icon">✅</div><p>Med tiden kan en podcast skapa både nätverk, uppdrag och inkomster. Många podcasters tjänar pengar via sponsorer och egna produkter.</p></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-youtube">
+<h2>Starta en YouTube-kanal</h2>
+<p>Lär ut det du kan. YouTube efterfrågar autentiska personer med verklig kunskap. Du behöver inte vara expert på teknik eller videoproduktion – människor vill lära sig av personer som har erfarenhet.</p>
+<div class="img-card"><img alt="YouTube tutorial" loading="lazy" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147486647/images/qBeFhDSVeCmJsFYd5okw_How_I_Film_YouTube_Tutorials.jpg"/><div class="img-card-caption">📹 Du kan börja filma med din mobiltelefon – innehållet är viktigare än produktionskvaliteten</div></div>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(239,68,68,.1);">▶️</div><h3>Exempel på YouTube-kanaler</h3></div>
+<div class="two-col">
+<div><h4>🔨 Hantverk &amp; praktik</h4><ul class="content-list"><li>Snickeri och träarbete</li><li>Renovering och hemförbättring</li><li>Sömnad och textilkonst</li><li>Reparationer och underhåll</li></ul><h4>🍳 Mat &amp; kultur</h4><ul class="content-list"><li>Traditionell matlagning</li><li>Internationella recept</li><li>Kulturkunskap och traditioner</li></ul></div>
+<div><h4>💪 Hälsa &amp; livskvalitet</h4><ul class="content-list"><li>Motion och träning för seniorer</li><li>Livsstilsråd och välmående</li><li>Mental hälsa och mindfulness</li></ul><h4>🗣️ Språk &amp; personlig utveckling</h4><ul class="content-list"><li>Svenska för nyanlända</li><li>Engelska i arbetslivet</li><li>Livslärdomar och motivation</li><li>Vardagsekonomi och sparande</li></ul></div>
+</div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-blogg">
+<h2>Skriv om det du kan – Blogg och artiklar</h2>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(43,95,142,.1);">✍️</div><h3>Blogg och artiklar</h3></div>
+<div class="two-col-img">
+<img alt="Senior skriver blogg" loading="lazy" src="https://www.terrabellaseniorliving.com/wp-content/uploads/2025/02/senior-caucasian-woman-use-laptop-computer-home-work.jpg"/>
+<div>
+<p>Många seniorer sitter på kunskap som få dokumenterat. En blogg kan stärka ditt personliga varumärke och locka uppdrag eller kunder.</p>
+<p>Du kan skriva om:</p>
+<ul class="content-list"><li>Arbetslivet och karriärutveckling</li><li>Branschkunskap och insikter</li><li>Historia och samhällsutveckling</li><li>Resor och kulturupplevelser</li><li>Tro och livsfrågor</li><li>Hälsa och välbefinnande</li><li>Företagande och ekonomi</li></ul>
+</div>
+</div>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Plattformar som WordPress, Substack och Medium gör det enkelt att starta en blogg gratis. Substack låter dig dessutom ta betalt för prenumerationer direkt.</p></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-digitala">
+<h2>Skapa digitala guider</h2>
+<p>Omvandla kunskap till produkter. Det du kan idag kan bli produkter som andra vill köpa eller ladda ner.</p>
+<div class="mini-cards"><div class="mini-card"><div class="mc-icon">📋</div><h4>Checklistor</h4><p>Checklista för nya företagare</p></div><div class="mini-card"><div class="mc-icon">📖</div><h4>Guider</h4><p>Guide för arbetssökande</p></div><div class="mini-card"><div class="mc-icon">📚</div><h4>Handböcker</h4><p>Handbok för föreningar</p></div><div class="mini-card"><div class="mc-icon">🇸🇪</div><h4>Arbetsmarknaden</h4><p>Guide till svensk arbetsmarknad</p></div><div class="mini-card"><div class="mc-icon">💰</div><h4>Ekonomi</h4><p>Ekonomiska råd och tips</p></div><div class="mini-card"><div class="mc-icon">👨‍👩‍👧</div><h4>Familjeguider</h4><p>Guider för familjelivet</p></div></div>
+<div class="success-box"><div class="tip-icon">✅</div><p><strong>Passiv inkomst:</strong> En digital produkt skapas en gång men kan användas och säljas om och om igen. Plattformar som Gumroad, Etsy och Payhip gör det enkelt att sälja digitala produkter.</p></div>
+</section>
+<div class="divider"></div>
+<section id="s-kurs">
+<h2>Starta studiecirkel eller digital kurs</h2>
+<p>Människor vill lära sig av personer med praktisk erfarenhet.</p>
+<div class="two-col">
+<div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(16,185,129,.1);">📚</div><h3>Kursämnen</h3></div><div class="topic-tags"><span class="topic-tag">Hantverk</span><span class="topic-tag">Matlagning</span><span class="topic-tag">Trädgård</span><span class="topic-tag">Företagande</span><span class="topic-tag">Språk</span><span class="topic-tag">Kultur</span><span class="topic-tag">Ledarskap</span><span class="topic-tag">Personlig utveckling</span></div></div>
+<div class="section-card"><div class="section-card-header"><div class="section-card-icon" style="background:rgba(245,158,11,.1);">📍</div><h3>Var kan kurser hållas?</h3></div><ul class="content-list"><li>Digitalt via Zoom eller Teams</li><li>På bibliotek och kulturhus</li><li>Via studieförbund (ABF, Medborgarskolan)</li><li>I föreningar och organisationer</li><li>På företag och arbetsplatser</li></ul></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-ideell">
+<h2>Hjälp ideella organisationer</h2>
+<p>Många föreningar och ideella organisationer behöver erfarna personer med din typ av kompetens och livserfarenhet.</p>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(43,95,142,.1);">🏛️</div><h3>Du kan bidra med:</h3></div>
+<div class="two-col"><ul class="content-list"><li>Styrelsearbete och ledning</li><li>Projektledning och koordinering</li><li>Administration och ekonomi</li></ul><ul class="content-list"><li>Utbildning och kompetensutveckling</li><li>Nätverksbyggande och kontakter</li><li>Mentorskap och vägledning</li></ul></div>
+<div class="highlight-box"><h4>Dubbel nytta</h4><p>Ideellt arbete kan också skapa nya kontakter som leder till arbete eller betalda uppdrag. Det stärker dessutom ditt CV och visar engagemang.</p></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-varumarke">
+<h2>Bygg ditt personliga varumärke</h2>
+<p>Visa vem du är och vad du kan. Många seniorer har stor kompetens men syns inte på arbetsmarknaden eller online.</p>
+<div class="img-card"><img alt="Professionellt nätverk" loading="lazy" src="https://as2.ftcdn.net/v2/jpg/07/69/86/71/1000_F_769867165_SdtmJCPOpqQ5aSqk5ZchvXSugVW3gz4o.jpg"/><div class="img-card-caption">🌐 Genom att synas online kan du nå människor som behöver just din erfarenhet</div></div>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(139,92,246,.1);">📢</div><h3>Plattformar för synlighet</h3></div>
+<div class="mini-cards"><div class="mini-card"><div class="mc-icon">💼</div><h4>LinkedIn</h4><p>Professionellt nätverk</p></div><div class="mini-card"><div class="mc-icon">📘</div><h4>Facebook</h4><p>Grupper och sidor</p></div><div class="mini-card"><div class="mc-icon">▶️</div><h4>YouTube</h4><p>Videotutorials</p></div><div class="mini-card"><div class="mc-icon">✍️</div><h4>Blogg</h4><p>Artiklar och kunskap</p></div><div class="mini-card"><div class="mc-icon">🎙️</div><h4>Podcast</h4><p>Berättelser och intervjuer</p></div></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-yrkesomraden">
+<h2>Yrkesområden med stor erfarenhetsnytta</h2>
+<p>Värdefulla erfarenheter finns inom alla branscher och yrken – inte bara inom teknik.</p>
+<div class="section-card">
+<div class="section-card-header"><div class="section-card-icon" style="background:rgba(16,185,129,.1);">🏆</div><h3>Alla dessa områden innehåller kunskap som andra vill lära sig av</h3></div>
+<div class="two-col"><ul class="content-list"><li>Vård och omsorg</li><li>Skola och utbildning</li><li>Barnomsorg och pedagogik</li><li>Handel och detaljhandel</li><li>Service och besöksnäring</li><li>Hantverk och byggnation</li><li>Transport och logistik</li><li>Jordbruk och livsmedel</li></ul><ul class="content-list"><li>Företagande och egenföretagande</li><li>Ledarskap och management</li><li>Administration och kontor</li><li>Ekonomi och redovisning</li><li>Kultur och kreativa yrken</li><li>Föreningsliv och ideellt arbete</li><li>Integration och mångfald</li><li>Kundservice och försäljning</li></ul></div>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Oavsett vilket yrke du haft finns det människor som vill lära sig av din erfarenhet. Din bakgrund är unik och värdefull.</p></div>
+</div>
+</section>
+<div class="divider"></div>
+<section id="s-inspiration">
+<h2>Inspiration</h2>
+<div class="quote-box"><p>Den moderna arbetsmarknaden handlar inte längre bara om att få ett jobb. Den handlar också om att dela kunskap, bygga nätverk, hjälpa andra, skapa egna möjligheter och utvecklas genom hela livet.</p><strong>Din ålder är inte ditt hinder. Din erfarenhet är din styrka.</strong></div>
+<h3>Berättelser från verkligheten</h3>
+<div class="cards-grid">
+<div class="story-card"><div class="story-tag">✅ Ny karriär</div><div class="story-quote">"</div><p class="story-text">Efter 30 år inom vården startade jag en YouTube-kanal om hemvård och egenvård. Idag har jag 12 000 prenumeranter och håller betalda workshops online.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#2B5F8E,#3B82C4);">M</div><div><div class="story-name">Margareta, 62 år</div><div class="story-role">F.d. sjuksköterska</div></div></div></div>
+<div class="story-card"><div class="story-tag">🚀 Mentorskap</div><div class="story-quote">"</div><p class="story-text">Jag trodde att min karriär var över vid 58. Men som mentor för nyanlända företagare har jag hittat ett nytt syfte – och tjänar bra på det.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#10b981,#06b6d4);">H</div><div><div class="story-name">Hassan, 61 år</div><div class="story-role">F.d. ekonomichef</div></div></div></div>
+<div class="story-card"><div class="story-tag">🎙️ Podcast</div><div class="story-quote">"</div><p class="story-text">Min podcast om ledarskap och arbetslivserfarenheter har gett mig föreläsningsuppdrag, konsultjobb och ett nätverk jag aldrig hade som anställd.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">B</div><div><div class="story-name">Birgitta, 59 år</div><div class="story-role">F.d. HR-chef</div></div></div></div>
+<div class="story-card"><div class="story-tag">💰 Passiv inkomst</div><div class="story-quote">"</div><p class="story-text">Jag skapade en digital guide om svensk arbetsmarknad för nyanlända. Den säljer fortfarande varje månad – och jag skapade den för tre år sedan.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#8b5cf6,#6366f1);">F</div><div><div class="story-name">Fatima, 57 år</div><div class="story-role">F.d. arbetsförmedlare</div></div></div></div>
+</div>
+<div class="success-box" style="margin-top:1.5rem;"><div class="tip-icon">🌟</div><p><strong>Din tur:</strong> Oavsett var du befinner dig i livet finns det möjligheter att använda din erfarenhet på nya sätt. Börja med ett litet steg idag.</p></div>
+<div class="highlight-box" style="margin-top:1rem;"><h4>Kom ihåg</h4><p>Efter 55 handlar framgång inte om att börja om från början. Det handlar om att bygga vidare på allt du redan kan.</p></div>
+</section>
+</main>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: ONLINE -->
+<!-- ============================================================ -->
+<div id="page-online" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Tjäna Online</span></div>
+<h1>Tjäna <span>Online</span></h1>
+<p>Skapa dina egna möjligheter – frilansarbete, digitala produkter och e-handel</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><rect fill="rgba(255,255,255,.08)" height="55" rx="6" stroke="rgba(126,200,240,.3)" stroke-width="2" width="110" x="25" y="30"></rect><text fill="rgba(255,255,255,.8)" font-size="22" text-anchor="middle" x="80" y="62">💻</text><circle cx="130" cy="25" fill="rgba(16,185,129,.25)" r="12" stroke="rgba(16,185,129,.5)" stroke-width="1.5"></circle><text fill="#10b981" font-size="11" text-anchor="middle" x="130" y="30">💰</text></svg></div>
+</div>
+</div>
+<div class="page-layout">
+<aside class="sidebar">
+<div class="sidebar-box"><div class="sidebar-box-title">📋 Innehåll</div><ul class="sidebar-nav"><li><a class="active" href="#on-intro">Introduktion</a></li><li><a href="#on-frilans">Frilansarbete</a></li><li><a href="#on-kunskap">Sälja kunskap</a></li><li><a href="#on-digitala">Digitala produkter</a></li><li><a href="#on-ehandel">E-handel</a></li><li><a href="#on-sociala">Sociala medier</a></li><li><a href="#on-steg">Kom igång</a></li></ul></div>
+<div class="sidebar-cta"><p>Vill du starta eget?</p><a href="#" onclick="showPage('kontakt')">📩 Kontakta oss</a></div>
+</aside>
+<main class="main-content">
+<section id="on-intro">
+<h2>Skapa dina egna möjligheter</h2>
+<div class="img-card"><img alt="Frilansarbete hemifrån" loading="lazy" src="https://imageio.forbes.com/specials-images/imageserve/63c6aaba79addb9aa8987497/Entrepreneur-Using-Laptop-At-Home-Office/0x0.jpg?width=960"/><div class="img-card-caption">💻 Internet har gjort det möjligt att skapa inkomster på många olika sätt</div></div>
+<p>Internet har gjort det möjligt att skapa inkomster på många olika sätt. Du behöver inte alltid starta ett stort företag för att komma igång.</p>
+<div class="tip-box"><div class="tip-icon">💡</div><p>Oavsett om du vill ha en extra inkomst vid sidan av jobbet, starta eget företag eller skapa passiva inkomster – internet erbjuder möjligheter för alla.</p></div>
+</section>
+<div class="divider"></div>
+<section id="on-frilans"><h2>Frilansarbete</h2><p>Du kan sälja tjänster som:</p><ul class="content-list"><li>IT-support och teknisk hjälp</li><li>Administration och bokföring</li><li>Kundservice och support</li><li>Digital assistans</li><li>Webbunderhåll och SEO</li></ul><div class="highlight-box"><h4>Plattformar</h4><p>Upwork, Fiverr, Frilans.nu, LinkedIn</p></div></section>
+<div class="divider"></div>
+<section id="on-kunskap"><h2>Sälja kunskap</h2><p>Om du har erfarenhet inom ett område kan du erbjuda:</p><ul class="content-list"><li>Kurser och utbildningar online</li><li>Konsultationer (1-till-1 via Zoom)</li><li>Handledning och coaching</li><li>Föreläsningar och workshops</li></ul><div class="highlight-box"><h4>Plattformar</h4><p>Teachable, Udemy, Zoom, Calendly</p></div></section>
+<div class="divider"></div>
+<section id="on-digitala"><h2>Digitala produkter</h2><p>Skapa produkter en gång och sälj dem flera gånger. Exempel:</p><ul class="content-list"><li>CV-mallar och dokumentmallar</li><li>Excelmallar och kalkylblad</li><li>E-böcker och guider</li><li>Utbildningsmaterial</li></ul><div class="success-box"><div class="tip-icon">✅</div><p>En digital produkt skapas en gång men kan säljas obegränsat antal gånger utan extra arbete per försäljning.</p></div></section>
+<div class="divider"></div>
+<section id="on-ehandel"><h2>E-handel</h2><p>Sälj produkter genom webshop. Exempel:</p><ul class="content-list"><li>Hårprodukter och hudvård</li><li>Accessoarer och mode</li><li>Specialprodukter för nischmarknader</li><li>Dropshipping utan lagerhållning</li></ul><div class="highlight-box"><h4>Plattformar</h4><p>Shopify, WooCommerce, Etsy</p></div></section>
+<div class="divider"></div>
+<section id="on-sociala"><h2>Sociala medier</h2><p>Skapa innehåll på:</p><div class="mini-cards"><div class="mini-card"><div class="mc-icon">▶️</div><h4>YouTube</h4><p>Tutorials och guider</p></div><div class="mini-card"><div class="mc-icon">📘</div><h4>Facebook</h4><p>Grupper och sidor</p></div><div class="mini-card"><div class="mc-icon">🎵</div><h4>TikTok</h4><p>Korta videor</p></div><div class="mini-card"><div class="mc-icon">📸</div><h4>Instagram</h4><p>Visuellt innehåll</p></div></div><p>Bra innehåll kan generera kunder till dina tjänster och produkter.</p></section>
+<div class="divider"></div>
+<section id="on-steg"><h2>Kom igång – 5 steg</h2><div class="steps"><div class="step"><div class="step-num">1</div><div><h4>Välj din nisch</h4><p>Vad är du bra på? Vad efterfrågas på marknaden? Hitta skärningspunkten.</p></div></div><div class="step"><div class="step-num">2</div><div><h4>Validera idén</h4><p>Prata med potentiella kunder innan du investerar tid och pengar.</p></div></div><div class="step"><div class="step-num">3</div><div><h4>Starta enkelt</h4><p>Börja litet med minimal investering och väx gradvis baserat på feedback.</p></div></div><div class="step"><div class="step-num">4</div><div><h4>Marknadsför</h4><p>Använd sociala medier, ditt nätverk och SEO för att nå kunder.</p></div></div><div class="step"><div class="step-num">5</div><div><h4>Skala upp</h4><p>Automatisera processer och delegera för att växa utan att arbeta mer.</p></div></div></div></section>
+</main>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: RESURSER -->
+<!-- ============================================================ -->
+<div id="page-resurser" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Resurser</span></div>
+<h1><span>Gratis</span> resurser</h1>
+<p>Ladda ned mallar, guider och verktyg för att hjälpa dig komma vidare</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><rect fill="rgba(255,255,255,.08)" height="70" rx="4" stroke="rgba(255,255,255,.25)" stroke-width="2" width="55" x="35" y="20"></rect><rect fill="rgba(255,255,255,.5)" height="3" rx="1.5" width="40" x="42" y="30"></rect><rect fill="rgba(255,255,255,.3)" height="2" rx="1" width="35" x="42" y="37"></rect><rect fill="rgba(255,255,255,.3)" height="2" rx="1" width="38" x="42" y="42"></rect><text fill="rgba(255,255,255,.7)" font-size="28" text-anchor="middle" x="115" y="65">📚</text></svg></div>
+</div>
+</div>
+<div class="section-wrap">
+<div class="container">
+<div class="section-hdr">
+<div class="section-tag">Gratis nedladdningar</div>
+<h2>Mallar och guider</h2>
+<p>Alla resurser är gratis och skapade med AsterIT-design. Ladda ned, öppna i Word och anpassa till dina behov.</p>
+</div>
+<div class="cards-grid">
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">📄</div>
+<h3>CV-mall</h3>
+<p>Professionell mall med AsterIT-design. Blå header, tydlig layout med erfarenhet, utbildning, kompetenser och språk.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">Redigerbar</span><span class="tag">AsterIT-design</span></div>
+<a class="resource-btn" download="" href="downloads/CV_Mall_AsterIT.docx">⬇️ Ladda ned CV-mall</a>
+</div>
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">✉️</div>
+<h3>Personligt brev – mall</h3>
+<p>Professionell brevmall med AsterIT-design. Inkluderar struktur, tips och platshållare för alla avsnitt.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">Redigerbar</span><span class="tag">AsterIT-design</span></div>
+<a class="resource-btn" download="" href="downloads/Personligt_Brev_Mall_AsterIT.docx">⬇️ Ladda ned brevmall</a>
+</div>
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">🎤</div>
+<h3>Intervjuguide</h3>
+<p>Komplett guide med STAR-metoden, 8 vanliga frågor med svarsstrategi, checklista och egna frågor att ställa.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">8 frågor</span><span class="tag">STAR-metoden</span></div>
+<a class="resource-btn" download="" href="downloads/Intervjuguide_AsterIT.docx">⬇️ Ladda ned intervjuguide</a>
+</div>
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">✅</div>
+<h3>30-dagars jobbsökarplan</h3>
+<p>Veckovis handlingsplan med checklistor för förberedelse, aktivt sökande, nätverk och uppföljning.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">30 dagar</span><span class="tag">Checklistor</span></div>
+<a class="resource-btn" download="" href="downloads/30_Dagars_Jobbsokarplan_AsterIT.docx">⬇️ Ladda ned plan</a>
+</div>
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">🤖</div>
+<h3>AI-promptbibliotek</h3>
+<p>10 färdiga prompts för Copilot, ChatGPT och Claude – CV, brev, intervjuträning, karriäranalys och LinkedIn.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">10 prompts</span><span class="tag">Copilot &amp; ChatGPT</span></div>
+<a class="resource-btn" download="" href="downloads/AI_Promptbibliotek_AsterIT.docx">⬇️ Ladda ned prompts</a>
+</div>
+<div class="resource-card">
+<div style="font-size:2rem;margin-bottom:.7rem;">💼</div>
+<h3>LinkedIn-guide</h3>
+<p>Steg-för-steg-guide för att optimera profil, rubrik, sammanfattning, erfarenhet, nätverk och jobbsökning.</p>
+<div class="tag-list" style="margin-bottom:.9rem;"><span class="tag">Word .docx</span><span class="tag">Checklistor</span><span class="tag">Komplett guide</span></div>
+<a class="resource-btn" download="" href="downloads/LinkedIn_Guide_AsterIT.docx">⬇️ Ladda ned LinkedIn-guide</a>
+</div>
+</div>
+<div class="tip-box" style="margin-top:2rem;"><div class="tip-icon">📧</div><p>Behöver du hjälp med att anpassa mallarna? Kontakta oss på <strong><a href="mailto:aster.demeke@outlook.com" style="color:#78350f;">aster.demeke@outlook.com</a></strong> eller ring <strong>0739068487</strong>.</p></div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: BERÄTTELSER -->
+<!-- ============================================================ -->
+<div id="page-berattelser" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Berättelser</span></div>
+<h1><span>Framgångs</span>berättelser</h1>
+<p>Inspiration från verkligheten – personer som tagit nästa steg</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><text fill="rgba(255,255,255,.12)" font-family="Georgia" font-size="50" text-anchor="middle" x="80" y="65">"</text><text fill="rgba(255,255,255,.7)" font-size="28" text-anchor="middle" x="80" y="55">💬</text></svg></div>
+</div>
+</div>
+<div class="section-wrap">
+<div class="container">
+<div class="section-hdr"><div class="section-tag">Inspiration</div><h2>Berättelser från verkligheten</h2><p>Att läsa om andra människors resor kan ge motivation och nya idéer. Här delar vi berättelser om personer som tagit nästa steg i sina karriärer.</p></div>
+<div class="cards-grid">
+<div class="story-card"><div class="story-tag">✅ Fick nytt jobb</div><div class="story-quote">"</div><p class="story-text">Efter 14 månaders arbetslöshet hittade jag mitt drömjobb tack vare AsterITs CV-guide och LinkedIn-tips. Jag förstod äntligen hur jag skulle presentera min erfarenhet på rätt sätt.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#2B5F8E,#3B82C4);">M</div><div><div class="story-name">Maria, 47 år</div><div class="story-role">Projektledare → IT-konsult</div></div></div></div>
+<div class="story-card"><div class="story-tag">🚀 Startade eget</div><div class="story-quote">"</div><p class="story-text">Jag var rädd för att starta eget vid 59 år. Men med rätt stöd och verktyg lanserade jag mitt konsultbolag och har nu fler kunder än jag kan hantera. Erfarenhet säljer!</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#10b981,#06b6d4);">L</div><div><div class="story-name">Lars, 59 år</div><div class="story-role">Anställd → Egenföretagare</div></div></div></div>
+<div class="story-card"><div class="story-tag">💻 Online-inkomst</div><div class="story-quote">"</div><p class="story-text">Jag skapade en onlinekurs om mitt yrke och tjänar nu extra pengar varje månad utan att arbeta mer. AI-verktygen hjälpte mig att skriva kursmaterialet på halva tiden.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">A</div><div><div class="story-name">Anna, 52 år</div><div class="story-role">Lärare → Online-kursare</div></div></div></div>
+<div class="story-card"><div class="story-tag">🔄 Karriärbyte</div><div class="story-quote">"</div><p class="story-text">Efter 25 år inom industrin bytte jag karriär till digital marknadsföring. AsterITs guider och AI-verktyg hjälpte mig att lära mig det nya området snabbt och effektivt.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#8b5cf6,#6366f1);">P</div><div><div class="story-name">Peter, 54 år</div><div class="story-role">Industri → Digital marknadsföring</div></div></div></div>
+<div class="story-card"><div class="story-tag">🌟 Ny kompetens</div><div class="story-quote">"</div><p class="story-text">Jag trodde att AI var för unga. Men med AsterITs hjälp lärde jag mig använda Copilot och ChatGPT. Nu är jag den på jobbet som alla frågar om AI-verktyg!</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#ec4899,#f43f5e);">B</div><div><div class="story-name">Britta, 63 år</div><div class="story-role">Administratör → AI-ambassadör</div></div></div></div>
+<div class="story-card"><div class="story-tag">💼 Deltid → Heltid</div><div class="story-quote">"</div><p class="story-text">Jag började med ett deltidskonsultuppdrag och byggde gradvis upp min verksamhet. Idag väljer jag mina kunder själv och har full kontroll över min tid och inkomst.</p><div class="story-author"><div class="story-avatar" style="background:linear-gradient(135deg,#14b8a6,#2B5F8E);">K</div><div><div class="story-name">Karin, 61 år</div><div class="story-role">Deltid → Fullständig konsult</div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- PAGE: KONTAKT -->
+<!-- ============================================================ -->
+<div id="page-kontakt" style="display:none;">
+<div class="page-header">
+<div class="page-header-inner">
+<div class="page-header-text">
+<div class="page-header-breadcrumb"><a href="#" onclick="showPage('home')">Startsida</a><span>›</span><span style="color:rgba(255,255,255,.9);">Kontakta oss</span></div>
+<h1>Kontakta <span>AsterIT</span></h1>
+<p>Personlig hjälp med karriär, IT och företagande</p>
+</div>
+<div class="page-header-img"><svg fill="none" viewbox="0 0 160 110"><rect fill="rgba(255,255,255,.08)" height="55" rx="8" stroke="rgba(126,200,240,.3)" stroke-width="2" width="100" x="30" y="30"></rect><path d="M30 42 L80 65 L130 42" fill="none" stroke="rgba(126,200,240,.5)" stroke-width="2"></path><text fill="rgba(255,255,255,.7)" font-size="18" text-anchor="middle" x="80" y="58">📩</text></svg></div>
+</div>
+</div>
+<div class="section-wrap">
+<div class="container">
+<div class="contact-grid">
+<div>
+<h2 style="font-size:1.4rem;font-weight:800;color:var(--primary);margin-bottom:1.2rem;">Behöver du personlig hjälp?</h2>
+<p style="color:var(--gray);margin-bottom:1.5rem;">AsterIT erbjuder stöd inom karriärutveckling, IT &amp; digitalisering och företagande. Kontakta oss för att diskutera dina mål och hur vi kan hjälpa dig vidare.</p>
+<div class="info-box" style="margin-bottom:1.2rem;"><div class="tip-icon">📧</div><p><strong>E-post:</strong> <a href="mailto:aster.demeke@outlook.com">aster.demeke@outlook.com</a><br/><strong>Telefon:</strong> <a href="tel:0739068487">0739068487</a></p></div>
+<div class="contact-service"><h4>🎯 Karriärutveckling</h4><ul><li>CV-granskning och förbättring</li><li>Personligt brev – skriva och anpassa</li><li>Intervjuträning och förberedelse</li><li>LinkedIn-profil optimering</li><li>Karriärcoaching och vägledning</li></ul></div>
+<div class="contact-service"><h4>💻 IT &amp; Digitalisering</h4><ul><li>IT-support och teknisk hjälp</li><li>Microsoft 365 utbildning och support</li><li>AI-lösningar och verktygsimplementering</li><li>Digital kompetensutveckling</li></ul></div>
+<div class="contact-service"><h4>🚀 Företagande</h4><ul><li>Hemsidor och webbutveckling</li><li>E-handel och webshop-lösningar</li><li>Digital marknadsföring och SEO</li><li>Affärsutveckling och strategi</li></ul></div>
+</div>
+<div>
+<div class="contact-form-box">
+<h3>📬 Skicka ett meddelande</h3>
+<div class="form-group"><label>Ditt namn</label><input id="f-name" placeholder="Förnamn Efternamn" type="text"/></div>
+<div class="form-group"><label>E-postadress</label><input id="f-email" placeholder="aster.demeke@outlook.com" type="email"/></div>
+<div class="form-group"><label>Vad behöver du hjälp med?</label>
+<select id="f-service"><option value="">Välj ett område...</option><option>Karriärutveckling &amp; CV</option><option>Intervjuträning</option><option>LinkedIn-profil</option><option>IT-support</option><option>Microsoft 365</option><option>AI-verktyg</option><option>Hemsida &amp; E-handel</option><option>Affärsutveckling</option><option>Senior Karriär 55+</option><option>Annat</option></select>
+</div>
+<div class="form-group"><label>Ditt meddelande</label><textarea id="f-message" placeholder="Berätta om din situation och vad du vill uppnå..."></textarea></div>
+<button class="form-submit" onclick="submitForm()">📨 Skicka meddelande</button>
+<div class="form-success" id="form-success">✅ Tack! Vi återkommer inom 24 timmar.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FOOTER -->
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="logo-box">Aster<em>IT</em></div>
+<p style="margin-top:.7rem;">Praktiskt stöd för arbetssökande, egenföretagare och personer som vill utveckla sin kompetens i det digitala arbetslivet.</p>
+<p style="margin-top:.5rem;font-size:.8rem;">📧 aster.demeke@outlook.com<br/>📞 0739068487</p>
+</div>
+<div class="footer-col"><h4>Karriär &amp; Framtid</h4><ul><li><a href="#" onclick="showPage('jobbsokning')">Jobbsökning</a></li><li><a href="#" onclick="showPage('ai')">AI-verktyg</a></li><li><a href="#" onclick="showPage('senior')">Senior 55+</a></li><li><a href="#" onclick="showPage('online')">Tjäna Online</a></li></ul></div>
+<div class="footer-col"><h4>Resurser</h4><ul><li><a download="" href="downloads/CV_Mall_AsterIT.docx">CV-mall</a></li><li><a download="" href="downloads/Personligt_Brev_Mall_AsterIT.docx">Brevmall</a></li><li><a download="" href="downloads/AI_Promptbibliotek_AsterIT.docx">AI-prompts</a></li><li><a download="" href="downloads/LinkedIn_Guide_AsterIT.docx">LinkedIn-guide</a></li></ul></div>
+<div class="footer-col"><h4>AsterIT</h4><ul><li><a href="#" onclick="showPage('berattelser')">Berättelser</a></li><li><a href="#" onclick="showPage('kontakt')">Kontakt</a></li><li><a href="#">Om oss</a></li><li><a href="#">Blogg</a></li></ul></div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 AsterIT. Alla rättigheter förbehållna.</span>
+<span>Karriär &amp; Framtid – Din väg till ett meningsfullt arbete</span>
+</div>
+</footer>
+<button id="chat-btn" onclick="showToast('Chatten öppnas snart! 💬')">💬 Skriv i chatten!</button>
+<div id="toast"></div>
+<script>
+// ===== PAGE NAVIGATION =====
+function showPage(page) {
+  const pages = ['home','jobbsokning','ai','senior','online','resurser','berattelser','kontakt'];
+  pages.forEach(p => {
+    const el = document.getElementById('page-' + p);
+    if (el) el.style.display = p === page ? 'block' : 'none';
+  });
+  pages.forEach(p => {
+    const link = document.getElementById('nav-' + p);
+    if (link) link.classList.toggle('active', p === page);
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (page === 'home') setTimeout(animateCounters, 400);
+  // Trigger fade-in for visible elements
+  setTimeout(() => {
+    document.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) el.classList.add('visible');
+    });
+  }, 100);
+  return false;
+}
+function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+// ===== HAMBURGER =====
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.toggle('open');
+});
+
+// ===== PARTICLES =====
+const particlesEl = document.getElementById('particles');
+if (particlesEl) {
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 8 + 4;
+    p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;animation-duration:${Math.random()*12+8}s;animation-delay:${Math.random()*10}s;`;
+    particlesEl.appendChild(p);
+  }
+}
+
+// ===== ACCORDION =====
+function toggleAcc(header) {
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  const parent = header.closest('.accordion');
+  if (parent) {
+    parent.querySelectorAll('.acc-body').forEach(b => b.classList.remove('open'));
+    parent.querySelectorAll('.acc-header').forEach(h => h.classList.remove('active'));
+  }
+  if (!isOpen) { body.classList.add('open'); header.classList.add('active'); }
+}
+
+// ===== CHECKLIST =====
+function toggleCheck(li) {
+  li.classList.toggle('checked');
+  li.querySelector('.check-box').textContent = li.classList.contains('checked') ? '✓' : '';
+}
+
+// ===== COUNTER ANIMATION =====
+function animateCounters() {
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    let current = 0;
+    const step = target / 55;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = Math.floor(current);
+    }, 22);
+  });
+}
+
+// ===== FADE IN OBSERVER =====
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== BACK TO TOP / SCROLL =====
+window.addEventListener('scroll', () => {
+  // Sidebar active link
+  const activePage = document.querySelector('[id^="page-"]:not([style*="none"])');
+  if (!activePage) return;
+  const sections = activePage.querySelectorAll('section[id]');
+  const sideLinks = activePage.querySelectorAll('.sidebar-nav a[href^="#"]');
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+  sideLinks.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+});
+
+// Smooth scroll for sidebar anchor links
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (a && a.getAttribute('href').length > 1 && !a.getAttribute('onclick')) {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+});
+
+// ===== TOAST =====
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ===== FORM =====
+function submitForm() {
+  const name = document.getElementById('f-name').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const service = document.getElementById('f-service').value;
+  const message = document.getElementById('f-message').value.trim();
+  if (!name || !email || !service || !message) { showToast('⚠️ Fyll i alla fält innan du skickar.'); return; }
+  document.getElementById('form-success').style.display = 'block';
+  ['f-name','f-email','f-message'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('f-service').value = '';
+  showToast('✅ Meddelande skickat!');
+  setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
+}
+
+// Init
+setTimeout(animateCounters, 600);
+</script>
+</body>
+</html>
